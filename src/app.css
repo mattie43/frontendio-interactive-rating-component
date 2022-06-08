@@ -100,7 +100,7 @@ h2 {
 .hidden {
   display:none;
 }
-.attribution {
+footer {
   position:absolute;
   bottom:10px;
 }

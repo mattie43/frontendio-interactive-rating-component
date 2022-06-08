@@ -10,44 +10,47 @@
 
 </head>
 <body>
-
-  <!-- Rating state start -->
-  <div class="rating-modal modal">
-    <div class="circle">
-      <img src="./images/icon-star.svg" alt="Star" id="star-svg"/>
-    </div>
-    <h2>How did we do?</h2>
-  <p>
-    Please let us know how we did with your support request. All feedback is appreciated 
-    to help us improve our offering!
-  </p>
-  <div class="rating-container">
-    <div class="circle rating-num" id="rating-1">1</div>
-    <div class="circle rating-num" id="rating-2">2</div>
-    <div class="circle rating-num" id="rating-3">3</div>
-    <div class="circle rating-num" id="rating-4">4</div>
-    <div class="circle rating-num" id="rating-5">5</div>
-  </div>
-  <button type="button" id="submit-button">S U B M I T</button>
-  </div>
-  <!-- Rating state end -->
-
-  <!-- Thank you state start -->
-  <div class="thank-you-modal modal hidden">
-    <img src="./images/illustration-thank-you.svg" alt="Thank You" id="thank-you-svg"/>
-    <div class="show-rating"></div>
-    <h2>Thank you!</h2>
+  <main>
+    <!-- Rating state start -->
+    <div class="rating-modal modal">
+      <div class="circle">
+        <img src="./images/icon-star.svg" alt="Star" id="star-svg"/>
+      </div>
+      <h1>How did we do?</h1>
     <p>
-      We appreciate you taking the time to give a rating. If you ever need more support, 
-      don’t hesitate to get in touch!
-    </p>  
-  </div>
-  <!-- Thank you state end -->  
+      Please let us know how we did with your support request. All feedback is appreciated 
+      to help us improve our offering!
+    </p>
+    <div class="rating-container">
+      <div class="circle rating-num" id="rating-1">1</div>
+      <div class="circle rating-num" id="rating-2">2</div>
+      <div class="circle rating-num" id="rating-3">3</div>
+      <div class="circle rating-num" id="rating-4">4</div>
+      <div class="circle rating-num" id="rating-5">5</div>
+    </div>
+    <button type="button" id="submit-button">S U B M I T</button>
+    </div>
+    <!-- Rating state end -->
 
-  <div class="attribution">
-    Challenge by&nbsp<a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by&nbsp<a href="https://github.com/mattie43" target="_blank">Matt Ericksen</a>.
-  </div>
+    <!-- Thank you state start -->
+    <div class="thank-you-modal modal hidden">
+      <img src="./images/illustration-thank-you.svg" alt="Thank You" id="thank-you-svg"/>
+      <div class="show-rating"></div>
+      <h1>Thank you!</h1>
+      <p>
+        We appreciate you taking the time to give a rating. If you ever need more support, 
+        don’t hesitate to get in touch!
+      </p>  
+    </div>
+    <!-- Thank you state end -->  
+  </main>
+
+  <footer>
+    <div>
+      Challenge by&nbsp<a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by&nbsp<a href="https://github.com/mattie43" target="_blank">Matt Ericksen</a>.
+    </div>
+  </footer>
   <script src="./src/app.js"></script>
   <link rel="stylesheet" href="./src/app.css">
 </body>
