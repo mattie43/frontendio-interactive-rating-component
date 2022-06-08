@@ -33,7 +33,7 @@ body {
   border-radius: 25px;
   padding:20px;
   margin:20px;
-  max-width: 32vw;
+  width:350px;
 }
 h2 {
   margin: 20px 0 0 0;
@@ -67,15 +67,6 @@ h2 {
   color: var(--orange-color);
 }
 
-.modal {
-  display: flex;
-  flex-direction: column;
-  background: var(--dark-blue);
-  border-radius: 25px;
-  padding:20px;
-  margin:20px;
-  max-width: 34vw;
-}
 #thank-you-svg {
   width:180px;
 }
@@ -120,7 +111,7 @@ h2 {
   }
 }
 
-@media (max-width:500px){
+@media (max-width:450px){
   .modal {
     max-width: 75vw;
   }
