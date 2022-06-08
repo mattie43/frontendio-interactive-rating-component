@@ -1,0 +1,127 @@
+@font-face {
+  font-family: overpass;
+  src: url(https://fonts.google.com/specimen/Overpass);
+}
+
+:root {
+  --orange-color: hsl(25, 97%, 53%);
+  --white: hsl(0, 0%, 100%);
+  --light-grey: hsl(217, 12%, 63%);
+  --med-grey: hsl(216, 12%, 54%);
+  --dark-blue: hsl(213, 19%, 18%);
+  --very-dark-blue: hsl(216, 12%, 8%);
+  --circle-background: #34404d;
+}
+
+body {
+  font-family: overpass;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin:0;
+  min-height:100vh;
+  font-size: 15px;
+  background: var(--very-dark-blue);
+  color:var(--light-grey);
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  background: var(--dark-blue);
+  border-radius: 25px;
+  padding:20px;
+  margin:20px;
+  max-width: 32vw;
+}
+h2 {
+  margin: 20px 0 0 0;
+  color:var(--white);
+}
+#star-svg {
+  height:18px;
+  width:18px
+}
+.rating-container {
+  display:flex;
+  justify-content: space-around;
+  margin: 15px 0 20px 0;
+}
+.rating-container > div:hover {
+  background: var(--orange-color);
+  color: var(--white);
+  cursor: pointer;
+}
+#submit-button {
+  border-radius: 50px;
+  border: none;
+  padding:10px;
+  margin:10px 5px;
+  color:var(--white);
+  background: var(--orange-color);
+  cursor: pointer;
+}
+#submit-button:hover {
+  background: var(--white);
+  color: var(--orange-color);
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  background: var(--dark-blue);
+  border-radius: 25px;
+  padding:20px;
+  margin:20px;
+  max-width: 34vw;
+}
+#thank-you-svg {
+  width:180px;
+}
+
+.circle {
+  height:45px;
+  width:45px;
+  border-radius: 50%;
+  background: var(--circle-background);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.selected-rating {
+  background: var(--light-grey);
+  color:var(--white);
+}
+
+.thank-you-modal {
+  align-items: center;
+  text-align: center;
+}
+.show-rating {
+  color: var(--orange-color);
+  background: var(--circle-background);
+  padding: 10px;
+  border-radius: 50px;
+  margin: 35px 0 15px 0;
+}
+
+.hidden {
+  display:none;
+}
+.attribution {
+  position:absolute;
+  bottom:10px;
+}
+
+@media (max-width:700px){
+  .modal {
+    max-width: 55vw;
+  }
+}
+
+@media (max-width:500px){
+  .modal {
+    max-width: 75vw;
+  }
+}
